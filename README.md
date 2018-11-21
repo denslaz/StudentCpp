@@ -1,2 +1,0 @@
-# StudentCpp
-Hello, world!
