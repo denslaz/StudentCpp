@@ -4,25 +4,31 @@
 #include <stdlib.h>
 using namespace std;
 
- int main()
+void Check(char *s) {
+	int size = strlen(s);
+	for (int i = 0; i < size; i++) {
+		int r = (int)s[i];
+		if (isdigit(r) == 0) {
+			cout << "ne chislo"; break;
+		}
+		else {
+			cout << "chislo"; break;
+		}
+	}
+}
+int main()
 {
 	cout << "Input constants:" << endl;
 	char s[100]; double massconst[1000]; char massoper[1000]; int i = 0;
 	for (i; i < 1000; i++) {
 		cin >> s;
-		if ((s[0] == 'e') && (s[1] == 'n') && (s[2] == 'd') && (s[3] == '\0')) {
+		Check(s);
+		if ((s[0] == 'e') && (s[1] == 'n') && (s[2] == 'd')) {
 			break;
 		}
-		else { 
-			if (cin.fail()) {
-				cin.clear();
-				cin.ignore(cin.rdbuf()->in_avail());
-				cout << "You wrote a wrong number, please retry!";
-			}
-			else {
-				double n = atof(s);
-				massconst[i] = n;
-			}
+		else {
+			double n = atof(s);
+			massconst[i] = n;
 		}
 	}
 	cout << "Input operations:" << endl;
