@@ -8,11 +8,12 @@ void Check(char *s) {
 	int size = strlen(s);
 	for (int i = 0; i < size; i++) {
 		int r = (int)s[i];
-		if (isdigit(r) == 0) {
-			cout << "ne chislo"; break;
+		if (isdigit(r) == 0 && (s[0] != 'e') && (s[1] != 'n') && (s[2] != 'd')) {
+			cout << "Error, your symbol was changed to 0!" << endl;
+			break;
 		}
 		else {
-			cout << "chislo"; break;
+			continue;
 		}
 	}
 }
@@ -34,8 +35,14 @@ int main()
 	cout << "Input operations:" << endl;
 	char c; int j = 0;
 	for (j; j < i - 1; j++) {
-		cin >> c;
-		massoper[j] = c;
+	    cin >> c;
+		if (c != '+' && c != '-' && c != '*' && c != '/') {
+			while (c != '+' && c != '-' && c != '*' && c != '/') {
+				cout << "Please enter the right number!" << endl;
+				cin >> c;
+			}
+		}
+		else massoper[j] = c;
 	}
 	double ans = 0;
 	for (int k = 0; k < j; k++) {
