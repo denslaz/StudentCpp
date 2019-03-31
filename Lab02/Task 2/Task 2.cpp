@@ -9,7 +9,9 @@ void Check(char *s) {
 	for (int i = 0; i < size; i++) {
 		int r = (int)s[i];
 		if (isdigit(r) == 0 && (s[0] != 'e') && (s[1] != 'n') && (s[2] != 'd')) {
-			cout << "Error, your symbol was changed to 0!" << endl;
+			cout << "You have entered the wrong number, please retry, if you want to finish, enter end!" << endl;
+			cin >> s;
+			Check(s);
 			break;
 		}
 		else {
@@ -35,7 +37,7 @@ int main()
 	cout << "Input operations:" << endl;
 	char c; int j = 0;
 	for (j; j < i - 1; j++) {
-	    cin >> c;
+		cin >> c;
 		if (c != '+' && c != '-' && c != '*' && c != '/') {
 			while (c != '+' && c != '-' && c != '*' && c != '/') {
 				cout << "Please enter the right number!" << endl;
