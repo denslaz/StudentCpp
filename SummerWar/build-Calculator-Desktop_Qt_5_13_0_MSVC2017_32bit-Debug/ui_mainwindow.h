@@ -11,11 +11,11 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -25,10 +25,9 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralWidget;
-    QTextBrowser *vivod;
     QPushButton *clear_2;
     QPushButton *change;
-    QPushButton *clear;
+    QPushButton *ravno;
     QPushButton *undo;
     QPushButton *eight;
     QPushButton *nine;
@@ -46,6 +45,7 @@ public:
     QPushButton *koreni;
     QPushButton *delenie;
     QPushButton *zero;
+    QLabel *vivod;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -57,9 +57,6 @@ public:
         MainWindow->resize(514, 505);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-        vivod = new QTextBrowser(centralWidget);
-        vivod->setObjectName(QString::fromUtf8("vivod"));
-        vivod->setGeometry(QRect(0, 0, 513, 61));
         clear_2 = new QPushButton(centralWidget);
         clear_2->setObjectName(QString::fromUtf8("clear_2"));
         clear_2->setGeometry(QRect(-1, 58, 131, 81));
@@ -74,14 +71,14 @@ public:
         QFont font1;
         font1.setPointSize(12);
         change->setFont(font1);
-        clear = new QPushButton(centralWidget);
-        clear->setObjectName(QString::fromUtf8("clear"));
-        clear->setGeometry(QRect(383, 58, 131, 81));
+        ravno = new QPushButton(centralWidget);
+        ravno->setObjectName(QString::fromUtf8("ravno"));
+        ravno->setGeometry(QRect(383, 58, 131, 81));
         QFont font2;
         font2.setPointSize(12);
         font2.setBold(true);
         font2.setWeight(75);
-        clear->setFont(font2);
+        ravno->setFont(font2);
         undo = new QPushButton(centralWidget);
         undo->setObjectName(QString::fromUtf8("undo"));
         undo->setGeometry(QRect(255, 58, 131, 81));
@@ -156,6 +153,9 @@ public:
         zero->setObjectName(QString::fromUtf8("zero"));
         zero->setGeometry(QRect(-1, 360, 131, 81));
         zero->setFont(font3);
+        vivod = new QLabel(centralWidget);
+        vivod->setObjectName(QString::fromUtf8("vivod"));
+        vivod->setGeometry(QRect(4, -1, 511, 61));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -176,15 +176,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        vivod->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600;\">0</span></p></body></html>", nullptr));
         clear_2->setText(QCoreApplication::translate("MainWindow", "CE", nullptr));
         change->setText(QCoreApplication::translate("MainWindow", "+/-", nullptr));
-        clear->setText(QCoreApplication::translate("MainWindow", "Clear", nullptr));
+        ravno->setText(QCoreApplication::translate("MainWindow", "=", nullptr));
         undo->setText(QCoreApplication::translate("MainWindow", "Undo", nullptr));
         eight->setText(QCoreApplication::translate("MainWindow", "8", nullptr));
         nine->setText(QCoreApplication::translate("MainWindow", "9", nullptr));
@@ -202,6 +196,7 @@ public:
         koreni->setText(QCoreApplication::translate("MainWindow", "sqrt", nullptr));
         delenie->setText(QCoreApplication::translate("MainWindow", "/", nullptr));
         zero->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
+        vivod->setText(QString());
     } // retranslateUi
 
 };
