@@ -341,7 +341,7 @@
      </font>
     </property>
     <property name="text">
-     <string>^2</string>
+     <string>x²</string>
     </property>
    </widget>
    <widget class="QPushButton" name="koreni">
@@ -359,7 +359,7 @@
      </font>
     </property>
     <property name="text">
-     <string>sqrt</string>
+     <string>√ </string>
     </property>
    </widget>
    <widget class="QPushButton" name="delenie">

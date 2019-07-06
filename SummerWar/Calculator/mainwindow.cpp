@@ -79,7 +79,7 @@ void MainWindow::on_nine_clicked()
 void MainWindow::on_minus_clicked()
 {
     FirstNumber = ui->vivod->text().toDouble();
-    ui->vivod->setText("-");
+    ui->vivod->setText("");
     minus = 1;
 }
 
@@ -106,12 +106,10 @@ void MainWindow::on_delenie_clicked()
 void MainWindow::on_clear_2_clicked()
 {
     ui->vivod->setText("");
-    bool plus = 0;
-    bool minus = 0;
-    bool ymnojenie = 0;
-    bool delenie = 0;
-    bool kvadrat = 0;
-    bool koren = 0;
+     plus = 0;
+     minus = 0;
+     ymnojenie = 0;
+     delenie = 0;
 }
 
 void MainWindow::on_change_clicked()
@@ -143,6 +141,10 @@ if(ymnojenie==1){
     Itog=FirstNumber*SecondNumber;
     ui->vivod->setText(QString::number(Itog));
 }
+ plus = 0;
+ minus = 0;
+ ymnojenie = 0;
+ delenie = 0;
 }
 
 void MainWindow::on_koreni_clicked()

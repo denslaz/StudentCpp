@@ -192,8 +192,8 @@ public:
         three->setText(QCoreApplication::translate("MainWindow", "3", nullptr));
         ymnojenie->setText(QCoreApplication::translate("MainWindow", "*", nullptr));
         one->setText(QCoreApplication::translate("MainWindow", "1", nullptr));
-        kvadrat->setText(QCoreApplication::translate("MainWindow", "^2", nullptr));
-        koreni->setText(QCoreApplication::translate("MainWindow", "sqrt", nullptr));
+        kvadrat->setText(QCoreApplication::translate("MainWindow", "x\302\262", nullptr));
+        koreni->setText(QCoreApplication::translate("MainWindow", "\342\210\232 ", nullptr));
         delenie->setText(QCoreApplication::translate("MainWindow", "/", nullptr));
         zero->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         vivod->setText(QString());
