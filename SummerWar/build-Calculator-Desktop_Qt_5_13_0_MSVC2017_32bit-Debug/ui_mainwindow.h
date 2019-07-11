@@ -11,7 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -45,7 +45,7 @@ public:
     QPushButton *koreni;
     QPushButton *delenie;
     QPushButton *zero;
-    QLabel *vivod;
+    QLineEdit *vivod;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -54,7 +54,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(514, 505);
+        MainWindow->resize(512, 510);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         clear_2 = new QPushButton(centralWidget);
@@ -153,13 +153,13 @@ public:
         zero->setObjectName(QString::fromUtf8("zero"));
         zero->setGeometry(QRect(-1, 360, 131, 81));
         zero->setFont(font3);
-        vivod = new QLabel(centralWidget);
+        vivod = new QLineEdit(centralWidget);
         vivod->setObjectName(QString::fromUtf8("vivod"));
-        vivod->setGeometry(QRect(4, -1, 511, 61));
+        vivod->setGeometry(QRect(0, 0, 515, 51));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 514, 26));
+        menuBar->setGeometry(QRect(0, 0, 512, 26));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -196,7 +196,7 @@ public:
         koreni->setText(QCoreApplication::translate("MainWindow", "\342\210\232 ", nullptr));
         delenie->setText(QCoreApplication::translate("MainWindow", "/", nullptr));
         zero->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
-        vivod->setText(QString());
+        vivod->setText(QCoreApplication::translate("MainWindow", "Null", nullptr));
     } // retranslateUi
 
 };

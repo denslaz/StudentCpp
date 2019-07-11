@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>514</width>
-    <height>505</height>
+    <width>512</width>
+    <height>510</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -400,17 +400,17 @@
      <string>0</string>
     </property>
    </widget>
-   <widget class="QLabel" name="vivod">
+   <widget class="QLineEdit" name="vivod">
     <property name="geometry">
      <rect>
-      <x>4</x>
-      <y>-1</y>
-      <width>511</width>
-      <height>61</height>
+      <x>0</x>
+      <y>0</y>
+      <width>515</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>Null</string>
     </property>
    </widget>
   </widget>
@@ -419,7 +419,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>514</width>
+     <width>512</width>
      <height>26</height>
     </rect>
    </property>

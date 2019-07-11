@@ -2,7 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <QLabel>
+#include <QWidget>
+#include <QGridLayout>
+#include <QKeyEvent>
+#include <Qt>
 namespace Ui {
 class MainWindow;
 }
@@ -56,8 +60,12 @@ private slots:
 
     void on_kvadrat_clicked();
 
+    virtual void keyPressEvent(QKeyEvent *event);
+
 private:
     Ui::MainWindow *ui;
+    QLabel *label;
+    QGridLayout *myLayout;
 };
 
 #endif // MAINWINDOW_H
