@@ -245,6 +245,7 @@ Makefile: ..\Calculator\Calculator.pro D:\5.13.0\msvc2017\mkspecs\win32-msvc\qma
 		D:\5.13.0\msvc2017\mkspecs\features\qt_config.prf \
 		D:\5.13.0\msvc2017\mkspecs\win32-msvc\qmake.conf \
 		D:\5.13.0\msvc2017\mkspecs\features\spec_post.prf \
+		.qmake.stash \
 		D:\5.13.0\msvc2017\mkspecs\features\exclusive_builds.prf \
 		D:\5.13.0\msvc2017\mkspecs\common\msvc-version.conf \
 		D:\5.13.0\msvc2017\mkspecs\features\toolchain.prf \
@@ -442,6 +443,7 @@ D:\5.13.0\msvc2017\mkspecs\features\qt_functions.prf:
 D:\5.13.0\msvc2017\mkspecs\features\qt_config.prf:
 D:\5.13.0\msvc2017\mkspecs\win32-msvc\qmake.conf:
 D:\5.13.0\msvc2017\mkspecs\features\spec_post.prf:
+.qmake.stash:
 D:\5.13.0\msvc2017\mkspecs\features\exclusive_builds.prf:
 D:\5.13.0\msvc2017\mkspecs\common\msvc-version.conf:
 D:\5.13.0\msvc2017\mkspecs\features\toolchain.prf:

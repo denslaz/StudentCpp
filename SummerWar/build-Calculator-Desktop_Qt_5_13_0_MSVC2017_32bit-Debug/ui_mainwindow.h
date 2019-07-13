@@ -25,7 +25,7 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralWidget;
-    QPushButton *clear_2;
+    QPushButton *CE;
     QPushButton *change;
     QPushButton *ravno;
     QPushButton *undo;
@@ -57,14 +57,14 @@ public:
         MainWindow->resize(512, 510);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-        clear_2 = new QPushButton(centralWidget);
-        clear_2->setObjectName(QString::fromUtf8("clear_2"));
-        clear_2->setGeometry(QRect(-1, 58, 131, 81));
+        CE = new QPushButton(centralWidget);
+        CE->setObjectName(QString::fromUtf8("CE"));
+        CE->setGeometry(QRect(-1, 58, 131, 81));
         QFont font;
         font.setPointSize(14);
         font.setBold(true);
         font.setWeight(75);
-        clear_2->setFont(font);
+        CE->setFont(font);
         change = new QPushButton(centralWidget);
         change->setObjectName(QString::fromUtf8("change"));
         change->setGeometry(QRect(127, 58, 131, 81));
@@ -176,7 +176,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        clear_2->setText(QCoreApplication::translate("MainWindow", "CE", nullptr));
+        CE->setText(QCoreApplication::translate("MainWindow", "CE", nullptr));
         change->setText(QCoreApplication::translate("MainWindow", "+/-", nullptr));
         ravno->setText(QCoreApplication::translate("MainWindow", "=", nullptr));
         undo->setText(QCoreApplication::translate("MainWindow", "Undo", nullptr));

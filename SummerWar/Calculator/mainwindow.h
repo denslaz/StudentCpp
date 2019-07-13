@@ -48,7 +48,7 @@ private slots:
 
     void on_delenie_clicked();
 
-    void on_clear_2_clicked();
+    void on_CE_clicked();
 
     void on_change_clicked();
 
@@ -59,6 +59,14 @@ private slots:
     void on_undo_clicked();
 
     void on_kvadrat_clicked();
+
+    void Check();
+
+    void numberWork(int i);
+
+    void operations();
+
+    void obratno(int j);
 
     virtual void keyPressEvent(QKeyEvent *event);
 
